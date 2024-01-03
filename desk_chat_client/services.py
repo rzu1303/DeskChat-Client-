@@ -101,7 +101,6 @@ class ClientServerConnection(Thread):
     def receive_messages(self):
         while True:
             try:
-            # while True:
                 username_header = self.client_socket.recv(self.HEADER_LENGTH)
 
                 if not len(username_header):

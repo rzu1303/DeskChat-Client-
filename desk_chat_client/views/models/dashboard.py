@@ -19,6 +19,7 @@ class Dashboard(QObject):
         self.message_box_update.emit(value)
         self._message_box_text = value
 
+
     @property
     def new_message(self) -> str:
         return self._new_message
